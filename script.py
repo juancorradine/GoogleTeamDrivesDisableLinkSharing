@@ -78,7 +78,7 @@ def delete_file_permissions():
                         print(get_timestamp() + " - Restarting...")
                     elif err.resp.status == 500:
                         print(get_timestamp() + " - Error 500: " + error_message + ".")
-                        print(get_timestamp() + "Retrying in 3 seconds...")
+                        print(get_timestamp() + " - Retrying in 3 seconds...")
                         time.sleep(3)
                     else:
                         processedteamdrivefiles[key] = "Error " + str(err.resp.status) + ". " + error_message
@@ -112,7 +112,7 @@ def get_file_permission_id():
                     print(get_timestamp() + " - Restarting...")
                 elif err.resp.status == 500:
                     print(get_timestamp() + " - Error 500: " + error_message + ".")
-                    print(get_timestamp() + "Retrying in 3 seconds...")
+                    print(get_timestamp() + " - Retrying in 3 seconds...")
                     time.sleep(3)
                 else:
                     raise
@@ -147,7 +147,7 @@ def get_files_in_teamdrive(teamdrive_id):
                 print(get_timestamp() + " - Restarting...")
             elif err.resp.status == 500:
                 print(get_timestamp() + " - Error 500: " + error_message + ".")
-                print(get_timestamp() + "Retrying in 3 seconds...")
+                print(get_timestamp() + " - Retrying in 3 seconds...")
                 time.sleep(3)
             else:
                 raise
@@ -178,7 +178,7 @@ def get_teamdrives():
                 print(get_timestamp() + " - Restarting...")
             elif err.resp.status == 500:
                 print(get_timestamp() + " - Error 500: " + error_message + ".")
-                print(get_timestamp() + "Retrying in 3 seconds...")
+                print(get_timestamp() + " - Retrying in 3 seconds...")
                 time.sleep(3)
             else:
                 raise
